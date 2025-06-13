@@ -1,37 +1,58 @@
-:root{
-    --btn-color-hover: #fff;
-}
-
 body {
-  background-color: rgb(49, 41, 41);
-  font-family: "Karla", sans-serif;
-}
-.container {
+  margin: 0;
+  padding: 0;
   display: flex;
+  flex-direction: column;
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background: url("https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJlfGVufDB8fDB8fHww");
+  background-repeat: no-repeat;
+  background-size:cover;
+  font-family: sans-serif;
 }
 
-.button_border {
-  background: linear-gradient(115deg, purple, red, orange);
-  padding: 2px;
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 3px 3px 0px black;
 }
 
-button {
-  border: none;
-  background-color: black;
-  color: rgb(212, 169, 169);
-  padding: 1em 1.5em;
-  font-family: inherit;
-  letter-spacing: 0.1em;
+.clock{
+    display: flex;
 }
 
-.button_border:hover{
-    background: linear-gradient(-45deg, purple, red, orange);
+.clock div{
+    margin: 5px;
+    position: relative;
 }
 
-.button_border:hover button{
-    color: var(--btn-color-hover);
-    padding: 1.1em 1.6em;
+.clock div span{
+    width: 100px;
+    height: 80px;
+    background-color: slateblue;
+    opacity: .8;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    background-color: darkblue;
+    opacity: 0.8;
+}
+
+.clock div #ampm{
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    font-size: 30px;
+    background-color: green;
 }

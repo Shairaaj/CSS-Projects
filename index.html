@@ -1,15 +1,32 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>CSS Button with Gradient</title>
+    <title>Digital Clock</title>
   </head>
-  <body>
+  <body style="font-family: sans-serif">
     <div class="container">
-      <div class="button_border">
-        <button>Start Coding!</button>
+      <h1>Digital Clock</h1>
+      <div class="clock">
+        <div>
+          <span id="hour">00</span>
+          <span class="text">Hours</span>
+        </div>
+        <div>
+          <span id="min">00</span>
+          <span class="text">Minutes</span>
+        </div>
+        <div>
+          <span id="sec">00</span>
+          <span class="text">Seconds</span>
+        </div>
+        <div>
+          <span id="ampm">AM</span>
+        </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
