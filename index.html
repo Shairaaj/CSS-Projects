@@ -4,29 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Digital Clock</title>
+    <title>Multiplication App</title>
   </head>
-  <body style="font-family: sans-serif">
-    <div class="container">
-      <h1>Digital Clock</h1>
-      <div class="clock">
-        <div>
-          <span id="hour">00</span>
-          <span class="text">Hours</span>
-        </div>
-        <div>
-          <span id="min">00</span>
-          <span class="text">Minutes</span>
-        </div>
-        <div>
-          <span id="sec">00</span>
-          <span class="text">Seconds</span>
-        </div>
-        <div>
-          <span id="ampm">AM</span>
-        </div>
+  <body>
+    <form class="form" id="form">
+      <h4 class="score" id="score">Score: 0</h4>
+      <h1 class="que" id="que">What is 1 multiplied by 4?</h1>
+      <input
+        type="text"
+        class="input"
+        id="input"
+        placeholder="Enter the number"
+        autofocus
+        autocomplete="off"
+      />
+      <div class="buttons" id="buttons">
+        <button class="btn" type="submit">Submit</button>
+        <button class="reset" id="reset" type="button">Reset</button>
       </div>
-    </div>
+    </form>
     <script src="script.js"></script>
   </body>
 </html>

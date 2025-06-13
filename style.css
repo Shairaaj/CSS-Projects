@@ -1,58 +1,73 @@
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background: url("https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJlfGVufDB8fDB8fHww");
-  background-repeat: no-repeat;
-  background-size:cover;
-  font-family: sans-serif;
-}
-
-h1{
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    text-shadow: 3px 3px 0px black;
-}
-
-.clock{
+body{
+    font-family: cursive;
     display: flex;
-}
-
-.clock div{
-    margin: 5px;
-    position: relative;
-}
-
-.clock div span{
-    width: 100px;
-    height: 80px;
-    background-color: slateblue;
-    opacity: .8;
-    color: white;
-    display:flex;
     justify-content: center;
+    height: 100vh;
     align-items: center;
-    font-size: 50px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-align: center;
+    background-color: yellow;
 }
 
-.clock .text{
-    height: 30px;
-    font-size: 10px;
-    text-transform: uppercase;
-    background-color: darkblue;
-    opacity: 0.8;
+.form{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,.3);
+    border-radius: 10px;
+    margin: 10px;
+} 
+
+.input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-color: green;
+    padding: 20px;
+    color: green;
+    font-size: 18px;
+    border: solid;
 }
 
-.clock div #ampm{
-    position: absolute;
-    bottom: 0;
-    height: 40px;
-    font-size: 30px;
+.input::placeholder{
+    font-size: 18px;
+    color: lightgray;
+    font-family: cursive;
+}
+
+.btn{
     background-color: green;
+    padding: 1rem;
+    width: 65%;
+    margin: 10px 0;
+    font-family: inherit;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    cursor:pointer;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+
+}
+.reset{
+    background-color: rgb(255,0,0,.9);
+    color: white;
+    font-size: 1rem;
+    width: 30%;
+    border: none;
+    font-family: inherit;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    height: min-content;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+}
+
+.score{
+    text-align: right;
+    color: green;
 }
