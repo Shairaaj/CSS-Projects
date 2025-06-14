@@ -10,5 +10,5 @@ let count=50;
 
 function updateCount(){
     totalcountEl.innerHTML= textareaEl.value.length;
-    remainingEl.innerHTML= 50-textareaEl.value.length;
+    remainingEl.innerHTML= textareaEl.getAttribute("maxLength")-textareaEl.value.length;
 }
