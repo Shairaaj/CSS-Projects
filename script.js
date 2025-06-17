@@ -1,14 +1,25 @@
-const remainingEl= document.getElementById("remaining-counter");
-const textareaEl= document.getElementById("textarea");
-const totalcountEl=document.getElementById("total-counter");
+const containerEl= document.querySelector(".container");
 
-textareaEl.addEventListener("keyup",()=>{
-    updateCount();
-})
+for( let i=0; i<30; i++){
+    const colorContainerEl= document.createElement("div");
+    colorContainerEl.classList.add("color-container");
+    containerEl.appendChild(colorContainerEl);
+    let str=randomColor();
+    colorContainerEl.innerText=str;
+    colorContainerEl.style.backgroundColor=str;
+}
+function randomColor(){
+    const chars="0123456789abcdef";
+    const colorlength=6;
+    let color= '';
 
-let count=50;
-
-function updateCount(){
-    totalcountEl.innerHTML= textareaEl.value.length;
-    remainingEl.innerHTML= textareaEl.getAttribute("maxLength")-textareaEl.value.length;
+    for(let i=0; i<colorlength; i++){
+        let c=Math.floor(Math.random()*20+1);
+        if(c>15){
+        c=c-5;
+       }
+       color+=chars[c];
+       
+    }
+    return '#'+color;
 }
